@@ -1,3 +1,3 @@
-# typescript-rollup-template
+# Evaluator
 
-A Github template for TypeScript development using the Rollup bundler.
+A web app for evaluating algebraic expressions and printing custom worksheets.

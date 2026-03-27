@@ -1,7 +1,7 @@
 {
-  "name": "typescript-rollup-template",
+  "name": "evaluator-web",
   "version": "1.0.0",
-  "description": "A Github template for TypeScript development using the Rollup bundler.",
+  "description": "A web app for evaluating algebraic expressions and printing custom worksheets.",
   "type": "module",
   "private": true,
   "scripts": {
