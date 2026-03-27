@@ -1,0 +1,21 @@
+{
+  "name": "typescript-rollup-template",
+  "version": "1.0.0",
+  "description": "A Github template for TypeScript development using the Rollup bundler.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@tsconfig/strictest": "^2.0.8",
+    "rollup": "^4.60.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^3.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^6.0.2"
+  }
+}
