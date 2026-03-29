@@ -1,3 +1,3 @@
-import { example } from "./v1/example.js";
+import { example } from "./v2/example.js";
 
 example();
