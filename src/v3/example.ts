@@ -1,7 +1,8 @@
-import { fraction, integer } from "./utils.js";
+import { evaluateSum } from "./evaluate/evaluateSum.js";
+import { integer, sum } from "./utils.js";
 
 export function example() {
-  const expr = fraction(integer(2), integer(5));
+  const expr = sum([integer(3), integer(5)] as const);
 
-  console.log(expr);
+  console.log(evaluateSum(expr.summands));
 }
