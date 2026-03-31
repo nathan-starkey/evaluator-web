@@ -2,7 +2,7 @@ export interface Undefined {
   type: "undefined";
 }
 
-export interface Variable<TName extends string> {
+export interface Variable<TName extends string = string> {
   type: "variable";
   name: TName;
 }
