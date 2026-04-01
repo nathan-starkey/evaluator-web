@@ -1,8 +1,11 @@
-import { evaluateSum } from "./evaluate/evaluateSum.js";
-import { integer, sum } from "./utils.js";
+import { evaluate } from "./evaluate/index.js";
+import { integer, product, sum } from "./utils.js";
 
 export function example() {
-  const expr = sum([integer(3), integer(5)] as const);
+  const two = integer(2);
+  const three = integer(3);
 
-  console.log(evaluateSum(expr.summands));
+  const expr = product([two, sum([two, three] as const)] as const);
+
+  console.log(evaluate(expr));
 }
