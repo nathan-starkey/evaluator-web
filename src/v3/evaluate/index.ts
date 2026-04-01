@@ -4,6 +4,8 @@ import { evaluateSum } from "./sum.js";
 
 export function evaluate(expr: MathExpr): MathExpr {
   switch (expr.type) {
+    case "nothing":
+      return expr;
     case "undefined":
       return expr;
     case "integer":

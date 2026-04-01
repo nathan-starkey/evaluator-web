@@ -1,3 +1,7 @@
+export interface Nothing {
+  type: "nothing";
+}
+
 export interface Undefined {
   type: "undefined";
 }
@@ -50,6 +54,7 @@ export interface Root<
 }
 
 export type MathExpr =
+  | Nothing
   | Undefined
   | Variable
   | Integer

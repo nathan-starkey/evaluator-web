@@ -2,6 +2,7 @@ import {
   Fraction,
   Integer,
   MathExpr,
+  Nothing,
   Power,
   Product,
   Root,
@@ -9,6 +10,12 @@ import {
   Undefined,
   Variable,
 } from "./types.js";
+
+export function nothing(): Nothing {
+  return {
+    type: "nothing",
+  };
+}
 
 export function und(): Undefined {
   return {
